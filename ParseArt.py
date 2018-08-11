@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 count = 1
 while count <= 3:
 
-    url = "http://bazkino.club/page/{}".format(count)
+    url = "http://baskino.club/page/{}".format(count)
     page = requests.get(url).text
     soup = BeautifulSoup(page, 'html.parser')
     divs = soup.findAll('div', {'class': 'th-in'})
